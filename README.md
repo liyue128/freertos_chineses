@@ -1,6 +1,23 @@
-# freertos_chineses
+---
+coverY: 0
+---
 
-阅读freertos官网文档的同时，为方便个人理解，翻译成中文文档。本人水平有限，欢迎批评指正
+# FreeRTOS内核简介
 
-freertos中文文档  -- created by lynzdnpi, 2021/10/11
-freertos官方文档链接: https://freertos.org/FreeRTOS-quick-start-guide.html#page_top
+本节描述如何在目标设备上快速运行FreeRTOS。(一些描述如何使用FreeRTOS的语句，省略)
+
+## RTOS快速上手指引
+
+
+
+FreeRTOS针对多种SOC和编译器进行了适配。每个RTOS适配都通过预配置的[例程](https://freertos.org/a00090.html)帮助用户快速上手。这些例程是通过包含完整信息的文件页实现的。其中，文件页的信息包括RTOS示例工程的源代码文件位置，编译示例工程，以及配置目标硬件。
+
+示例工程的文件页同时提供了RTOS适配的必要特定信息，包括如何编写RTOS兼容中断服务程序。FreeRTOS的快速运行操作步骤如下：
+
+* 下载FreeRTOS源码；
+* 定位到相关的文件位置；
+* 编译工程；
+* 运行示例工程；
+* 构建自己的工程。
+
+构建FreeRTOS工程的最简单方法是基于适配目标设备的SOC和编译器的设备进行配置。一旦例程代码能够在目标设备上运行起来，逐渐用自己的应用程序代码替换例程里面的函数。
