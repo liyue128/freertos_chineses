@@ -53,4 +53,8 @@ sbSEND_COMPLETED()验证是否由于流缓存区等待数据写入而导致任�
 
 ### sbRECEIVE_COMPLETED()(或sbRECEIVE_COMPLETED_FROM_ISR())
 
+<<<<<<< HEAD
 sbRECEIVE_COMPLETED()是sbSEND_COMPLETED()用作接收的等效项。该宏会被用来读取流缓冲区数据。该宏检查是否有任务阻塞在流缓冲区上以等待缓冲区出现可用空间，若存在有效空间，则将任务解除阻塞状态。 与sbSEND_COMPLETED()一样，通过在*FreeRTOSConfig.h*中定义函数替代默认函数。
+=======
+sbRECEIVE_COMPLETED()是sbSEND_COMPLETED()用作接收的等效项。该宏会被用来读取流缓冲区数据。该宏检查是否有任务阻塞在流缓冲区上以等待缓冲区出现可用空间，若存在有效空间，则将任务解除阻塞状态。 与sbSEND_COMPLETED()一样，通过在 FreeRTOSConfig.h中定义函数替代默认函数。
+>>>>>>> 39b22ce6762b1956caf757a529cb09819278eab5
